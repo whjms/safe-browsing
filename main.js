@@ -1,6 +1,6 @@
 function init() {
 	var p = document.createElement('div');
-	p.id = '#safe-popup';
+	p.id = 'safe-popup';
 	p.style.backgroundColor = '#000';
 	p.style.position = 'fixed';
 	p.style.zIndex = '9999999';
@@ -12,7 +12,7 @@ function init() {
 }
 
 function runRandomTest() {
-	var scripts = ['tests/sample.js'];
+	var scripts = ['tests/type.js', 'tests/sample.js'];
 	var script = scripts[Math.floor(Math.random() * scripts.length)];
 
 	var s = document.createElement('script');

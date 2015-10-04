@@ -1,6 +1,6 @@
 var safeBrowsing = {
 	getPopup : function() {
-		return document.getElementById('#safe-popup');
+		return document.getElementById('safe-popup');
 	},
 
 	hidePopup : function() {
@@ -19,7 +19,7 @@ function init() {
 		p.appendChild(getCharNode(chars[i]));
 	}
 
-	safeBrowsing.hidePopup();
+	// safeBrowsing.hidePopup();
 }
 
 function getRandomKey() {
