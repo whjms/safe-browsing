@@ -8,7 +8,7 @@
 	"content_scripts" : [
 		{
 			"matches" : ["http://*/*", "https://*/*"],
-			"js" : ["main.js"],
+			"js" : ["main.js", "tests/tic_tac_toe.js"],
 			"css" : ["tests/type.css"]
 		}
 	],
