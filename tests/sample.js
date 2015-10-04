@@ -1,6 +1,6 @@
 var safeBrowsing = {
 	getPopup : function() {
-		return document.getElementById('#safe-popup');
+		return document.getElementById('safe-popup');
 	},
 
 	hidePopup : function() {
