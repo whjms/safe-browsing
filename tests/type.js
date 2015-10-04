@@ -14,7 +14,7 @@ var safeBrowsing = {
 
 var TYPE_TIME_PER_CHAR = 200;
 
-function init() {
+function type_init() {
 	var p = safeBrowsing.getPopup();
 
 	var container = document.createElement('div');
@@ -38,7 +38,6 @@ function init() {
 }
 
 function gameOver() {
-	// alert('fail');
 	document.onkeypress = undefined;
 	window.clearInterval(window.timerInterval);
 	safeBrowsing.getPopup().style.backgroundColor = "#000";
@@ -68,7 +67,7 @@ function initGame(nodes) {
 	window.currChar = nodes[0].innerHTML;
 
 	window.timerInterval = window.setInterval(function() {
-		window.timeLeft -= 7;
+		window.timeLeft -= 12;
 		updateBar(window.timeLeft);
 		safeBrowsing.getPopup().style.backgroundColor = "rgba(0,0,0," +
 			(1 - (window.timeLeft * 0.75 / (TYPE_TIME_PER_CHAR * window.total))) + ")";
@@ -131,6 +130,6 @@ function getCharNode(chr) {
 
 chrome.runtime.onMessage.addListener(function(request) {
 	if(request.testName === 'type') {
-		init();
+		type_init();
 	}
 });

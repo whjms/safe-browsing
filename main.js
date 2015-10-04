@@ -11,15 +11,14 @@ function init() {
 	document.body.appendChild(p);
 }
 
-function runRandomTest() {
-	var scripts = ['tests/tic_tac_toe.js', 'tests/type.js'];
-	var scripts = ['tests/type.js'];
-	var script = scripts[Math.floor(Math.random() * scripts.length)];
+// function runRandomTest() {
+// 	var scripts = ['tests/tic_tac_toe.js', 'tests/type.js'];
+// 	var scripts = ['tests/type.js'];
+// 	var script = scripts[Math.floor(Math.random() * scripts.length)];
 
-	var s = document.createElement('script');
-	s.src = chrome.extension.getURL(script);
-	document.head.appendChild(s);
-}
+// 	var s = document.createElement('script');
+// 	s.src = chrome.extension.getURL(script);
+// 	document.head.appendChild(s);
+// }
 
 init();
-runRandomTest();
