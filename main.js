@@ -12,6 +12,7 @@ function init() {
 }
 
 function runRandomTest() {
+	var scripts = ['tests/tic_tac_toe.js', 'tests/type.js'];
 	var scripts = ['tests/type.js'];
 	var script = scripts[Math.floor(Math.random() * scripts.length)];
 
