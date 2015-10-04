@@ -12,5 +12,8 @@
 			"css" : ["tests/type.css"]
 		}
 	],
-	"web_accessible_resources" : ["tests/*"]
+	"web_accessible_resources" : ["tests/*"],
+	"permissions" : [
+		"storage"
+	]
 }

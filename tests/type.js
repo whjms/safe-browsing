@@ -38,7 +38,7 @@ function init() {
 }
 
 function gameOver() {
-	alert('fail');
+	// alert('fail');
 	document.onkeypress = undefined;
 	window.clearInterval(window.timerInterval);
 	safeBrowsing.getPopup().style.backgroundColor = "#000";
@@ -47,6 +47,13 @@ function gameOver() {
 	container.style.marginTop = (+ container.style.marginTop.slice(0, -2)) + 200 + "px";
 	container.style.opacity = '0';
 	document.getElementById('bar').style.opacity = '0';
+
+	var msg = document.createElement('h1');
+	msg.innerHTML = 'This page has been blocked for you\'re safety';
+	msg.id = 'msg';
+	safeBrowsing.getPopup().appendChild(msg);
+
+	var s = chrome.storage;
 }
 
 function updateBar(value) {

@@ -34,3 +34,11 @@
 	left: 0;
 	transition: opacity 0.5s ease-in-out;
 }
+
+#msg {
+	position: fixed;
+	text-align: center;
+	top: 150px;
+	left: 10px;
+	color: #fff;
+}
