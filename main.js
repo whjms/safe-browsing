@@ -12,7 +12,7 @@ function init() {
 }
 
 function runRandomTest() {
-	var scripts = ['tests/type.js', 'tests/sample.js'];
+	var scripts = ['tests/type.js'];
 	var script = scripts[Math.floor(Math.random() * scripts.length)];
 
 	var s = document.createElement('script');
