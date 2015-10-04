@@ -4,7 +4,8 @@
 }
 
 #type-container {
-	transition: margin 0.25s linear;
+	transition: margin 0.25s linear,
+		opacity 0.5s ease-in-out;
 	padding: 150px;
 }
 
@@ -14,10 +15,22 @@
 	transition: font-size 0.1s ease-in-out,
 		color 0.1s ease-in-out;
 	margin: 15px 0;
+	text-shadow: 0 0 1px #000;
+}
+
+#safe-popup .char.passed {
+	color: #444;
 }
 
 #safe-popup .char.active {
 	color: #fff;
-	font-size: 1.5em;
-	margin: 25px 0;
+	font-weight: bold;
+}
+
+#safe-popup progress {
+	position: fixed;
+	top: 10px;
+	width: 100%;
+	left: 0;
+	transition: opacity 0.5s ease-in-out;
 }
