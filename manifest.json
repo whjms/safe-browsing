@@ -8,12 +8,17 @@
 	"content_scripts" : [
 		{
 			"matches" : ["http://*/*", "https://*/*"],
-			"js" : ["main.js"],
+			"js" : ["main.js", "tests/type.js"],
 			"css" : ["tests/type.css"]
 		}
 	],
 	"web_accessible_resources" : ["tests/*"],
 	"permissions" : [
-		"storage"
-	]
+		"storage",
+		"tabs",
+		"webNavigation"
+	],
+	"background" : {
+		"scripts" : ["background.js"]
+	}
 }

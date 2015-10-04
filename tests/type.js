@@ -129,4 +129,8 @@ function getCharNode(chr) {
 	return container;
 }
 
-init();
+chrome.runtime.onMessage.addListener(function(request) {
+	if(request.testName === 'type') {
+		init();
+	}
+});
